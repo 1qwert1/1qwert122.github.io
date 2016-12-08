@@ -10,7 +10,14 @@ $(function() {
             function(){ $(this).addClass('active-top') },
             function(){ $(this).removeClass('active-top') }
 		)
-
+    var heightLogo = $('.logo').height();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= heightLogo) {
+            $('.header_top').addClass('stickytop');
+        } else {
+            $('.header_top').removeClass('stickytop');
+        }
+    });
 
 
 	//SVG Fallback
