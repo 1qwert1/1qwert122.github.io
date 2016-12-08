@@ -6,6 +6,13 @@ $(function() {
 
 	});
 
+		$(".navigation > ul > li").hover(
+            function(){ $(this).addClass('active-top') },
+            function(){ $(this).removeClass('active-top') }
+		)
+
+
+
 	//SVG Fallback
 
 	// if(!Modernizr.svg) {
