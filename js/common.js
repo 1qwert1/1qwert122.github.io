@@ -1,11 +1,9 @@
 $(function() {
 
 	$(".rslides").responsiveSlides({
-		nav: true,
-		pager: true,
-        before: function(){
-            // alert('1221');
-		},
+		// nav: true,
+		// pager: true,
+
 
 
 	});
