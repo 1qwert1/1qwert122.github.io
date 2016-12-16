@@ -12,7 +12,7 @@ $(function() {
             function(){ $(this).addClass('active-top') },
             function(){ $(this).removeClass('active-top') }
 		)
-    var heightLogo = $('.logo').height();
+    var heightLogo = $('#logo').outerHeight();
     $(window).scroll(function () {
         if ($(this).scrollTop() >= heightLogo) {
             $('.header_top').addClass('stickytop');
